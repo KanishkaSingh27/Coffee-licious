@@ -176,3 +176,55 @@ position: relative;
 input[type="submit"]:hover {
  background-size: 40px 40px;
 }
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  grid-gap:80px;
+  padding-left:40px;
+  padding-right: 40px;
+}
+.grid > div{
+  color: white;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  background-color:#F4DFBA;
+  padding-left: 20px;
+  color: black;
+  width: 400px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  
+}
+.grid > div > .t1{
+font-size: 30px;
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.grid>div>p{
+  font-size: 19px;
+}
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 5px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: rgb(202, 157, 88); 
+  color: white; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 18px; 
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+#myBtn:hover {
+  background-color: rgb(255, 187, 124); 
+}
+.up{
+margin-bottom: 20px;
+}
