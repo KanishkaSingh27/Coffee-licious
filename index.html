@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/feather-icons"></script>
     </head>
 
     <body bgcolor="black">
@@ -22,8 +23,8 @@
         <div class="topnav" id="topnav">
             
             <a href="#contact-us" class="left">Connect</a>
-            <a href="#" class="left">Shop</a>
-            <a href="#" class="left">Menu</a>
+            <a href="#shop" class="left">Shop</a>
+            <a href="#menu" class="left">Menu</a>
             <a href="#About" class="left">About</a>
             <a href="#" class="left">Home</a>
             
@@ -47,10 +48,96 @@
                 ales mi purus nec quam. Suspendisse eu orci in lacus cursus maximus. Cras pharetra, arcu non semper tristique, mi est rhoncus mi, 
                 ac finibus purus turpis sit amet urna.
 
-                Ut quis fringilla lectus. Ut sagittis ultrices turpis. Mauris imperdiet, nibh at egestas tempor, quam tellus elementum nunc, sed auctor mi tortor vel ex. Donec et sem vestibulum, sagittis sem quis, facilisis nisl. Vestibulum nec vestibulum metus. Suspendisse non magna ut tortor consequat posuere. Nam ornare tellus ac mollis venenatis. Quisque congue diam id luctus accumsan. Praesent vitae ultrices tortor. Maecenas convallis consectetur est, et tincidunt quam aliquam ut. Vivamus ultrices suscipit ipsum, sit amet porta ante lacinia suscipit. Integer ac augue non justo aliquet sollicitudin.</p>
+              </p>
         </section>    
         
+        <section id="menu">
+            <h1
+            style="font-size: 70px;font-family: 'Sacramento',cursive;text-align: center;">Our collection of coffee</h1>
+        <marquee style="font-family:'Sacramento', cursive; font-size:40px; padding-bottom: 30px; color: #EEC373;"><i>10% off on all types of coffees</i></marquee>
+        <div class="grid">
+            <div>
+                <p class="t1">Expresso</p>
+                <img src="https://i.pinimg.com/564x/d2/fa/06/d2fa068b5651c245bb44fe9dc6f4f3df.jpg" 
+                style="width: 150px;height:150px; border-radius:50%;margin-left:30%">
+                <p>the morning doesn't really begin until you have your first swig of coffee — and preferably espresso, since when it comes to coffee, 
+                    we believe the stronger, the better. </p>
+            </div>
+            <div>
+                <p class="t1">Cappuccino</p>
+                <img src="https://i.pinimg.com/564x/c6/fd/38/c6fd38ea83ae8534bd087533eb03bf0b.jpg"
+                style="width: 150px;height:150px; border-radius:50%;margin-left:30%">
+                <p>Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.Coffee at it's finest.</p>
+            </div>
+            <div>
+                <p class="t1">Freshly Brewed Coffee</p>
+                <img src="https://i.pinimg.com/564x/91/6e/44/916e44d1ba4a68b76049a5598319fb17.jpg"
+                style="width: 150px;height:150px; border-radius:50%;margin-left:30%">
+                <p>We take our coffee brewing seriously. In our travels around the world, we've tasted many a splendid cup of brewed coffee. Each one offers 
+                    something different and unique, each one with the love of your own hands. </p>
+            </div>
+            <div>
+                <p class="t1">Caffè Americano</p>
+                <img src="https://i.pinimg.com/564x/da/40/c9/da40c91edf37aa9759f7531678ec78fa.jpg"
+                style="width: 150px;height:150px; border-radius:50%;margin-left:30%">
+                <p>Rich, full-bodied espresso with hot water.Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance.</p>
+            </div>
+            <div>
+                <p class="t1">Caffè Latte</p>
+                <img src="https://i.pinimg.com/564x/54/5d/e3/545de3f1f1a0bb2d629fa9289147a2c1.jpg"
+                style="width: 150px;height:150px; border-radius:50%;margin-left:30%">
+                <p>Rich, full-bodied espresso in steamed milk, lightly topped with foam. A caffè latte is simply a shot or two of bold, tasty espresso with fresh, sweet steamed milk over it.</p>
+            </div>
+            <div>
+                <p class="t1">Caffè Mocha</p>
+                <img src="https://i.pinimg.com/564x/e9/62/20/e96220075dd9b10caa578617e9f7cf9b.jpg"
+                style="width: 150px;height:150px; border-radius:50%;margin-left:30%">
+                <p>Espresso with bittersweet mocha sauce and steamed milk, topped with sweetened whipped cream. Delightful.</p>
+            </div>
+        </div>
+        </section>
+        <section id="shop">
+            <h1 
+            style="font-family:'sacramento',cursive; font-size:70px;text-align:center;padding-top:30px;padding-bottom:30px;">Order Coffee</h1>
+            <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="Fullname" placeholder="Your name..">
+              
+                  <label for="email">Email ID</label>
+                  <input type="text" id="email" name="email" placeholder="Your Email ID..">
+              
+                  <label for="members">Phone Number</label>
+                  <input type="number" value="none" placeholder="Your Phone Number..">
+                  <label for="email">Address</label>
+                  <input type="text" id="Address" name="email" placeholder="Your Address..">
+                 
+
+                  <input type="checkbox" name="Expresso" id="Expresso" />
+                  <label for="Expresso">Expresso</label>
+                 
+                  <div><br>
+                  <input type="checkbox" name="Cappuccino" id="Cappuccino" value="Cappuccino"/>
+                  <label for="Cappuccino">Cappuccino</label></div><div><br>
+                  <input type="checkbox" name="Freshly Brewed Coffee" id="Freshly Brewed Coffee" value="Freshly Brewed Coffee"/>
+                  <label for="Freshly Brewed Coffee">Freshly Brewed Coffee</label></div><div><br>
+                  <input type="checkbox" name="Caffè Americano" id="Caffè Americano" value="Caffè Americano"/>
+                  <label for="Caffè Americano">Caffè Americano</label></div><div><br>
+                  <input type="checkbox" name="Caffè Latte" id="Caffè Latte" value="Caffè Latte"/>
+                  <label for="Caffè Latte">Caffè Latte</label></div><div><br>
+                  <input type="checkbox" name="Caffè Mocha" id="Caffè Mocha" value="Caffè Mocha"/>
+                  <label for="Caffè Mocha">Caffè Mocha</label></div><br>
+                 
+                
+                <br>
+                  <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>    
+        </section>
         <section id="contact-us">
+            <h1 
+            style="font-family:'sacramento',cursive ; font-size:70px;text-align:center; padding-top:30px;padding-bottom:30px;">Let's get in touch</h1>
             <div class="container">
                 <form action="/action_page.php">
                   <label for="fname">Full Name</label>
@@ -71,6 +158,28 @@
                 </form>
               </div>
         </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i data-feather="chevron-up" class="up"></i></button>
+        <script>
+          feather.replace()
+        </script>
+        <script>
+          mybutton = document.getElementById("myBtn");
         
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0; 
+          document.documentElement.scrollTop = 0; 
+        }
+        </script>
     </body>
 </html>
