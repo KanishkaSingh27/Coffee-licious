@@ -25,6 +25,7 @@
             <a href="#contact-us" class="left">Connect</a>
             <a href="#shop" class="left">Order</a>
             <a href="#menu" class="left">Menu</a>
+            <a href="#gallery" class="left">Gallery</a>
             <a href="#About" class="left">About</a>
             <a href="#" class="left">Home</a>
             
@@ -54,7 +55,67 @@
 
               </p>
         </section>    
-        
+        <section id="gallery">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  
+                  <img src="6.jpg" style="width:100%;">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="2.jpg" style="width:100%">
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <img src="5.jpg" style="width:100%; ">
+                  
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+        </section>
         <section id="menu">
             <h1
             style="font-size: 70px;font-family: 'Sacramento',cursive;text-align: center;">Our collection of coffee</h1>
