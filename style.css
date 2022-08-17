@@ -228,3 +228,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .up{
 margin-bottom: 20px;
 }
+footer{
+  padding-top: 50px;
+  text-align: center;
+}
